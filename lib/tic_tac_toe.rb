@@ -100,8 +100,8 @@ class TicTacToe
     won?(@board) || draw?(@board) || full?(@board)
   end
   
-  def winner(board)
-    combination = won?(board)
+  def winner
+    combination = won?(@board)
     
     if combination == false
       return nil
