@@ -51,7 +51,7 @@ class TicTacToe
       input = gets.strip
       index = input_to_index(input)
     end
-    move(board, index, "X")
+    move(index, "X")
   end
   
   def turn_count(board)
