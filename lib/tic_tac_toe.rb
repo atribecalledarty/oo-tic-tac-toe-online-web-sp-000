@@ -118,7 +118,7 @@ class TicTacToe
   def  play
     until over?
       index = 20
-      until valid_move?(board, index)
+      until valid_move?(index)
         puts "Please enter position(1-9):"
         input = gets.strip
         index = input_to_index(input)
