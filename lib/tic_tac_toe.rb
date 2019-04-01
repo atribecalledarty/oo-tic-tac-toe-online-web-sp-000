@@ -124,8 +124,8 @@ class TicTacToe
         index = input_to_index(input)
   
       end
-      move(board, index, current_player)
-      display_board(board)
+      move(index, current_player)
+      display_board
     end
     
     if winner(board) == "X"
