@@ -73,13 +73,13 @@ class TicTacToe
     end
   end
   
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.each do |combination|
       index1 = combination[0]
       index2 = combination[1]
       index3 = combination[2]
       
-      if (board[index1] == "X" && board[index2] == "X" && board[index3] == "X") || (board[index1] == "O" && board[index2] == "O" && board[index3] == "O")
+      if (@board[index1] == "X" && @board[index2] == "X" && @board[index3] == "X") || (@board[index1] == "O" && @board[index2] == "O" && @board[index3] == "O")
         return combination
       end
     end
