@@ -46,7 +46,7 @@ class TicTacToe
     puts "Enter a position(1-9):"
     input = gets.strip
     index = input_to_index(input)
-    until valid_move?(board, index)
+    until valid_move?(index)
       puts "Enter a position(1-9):"
       input = gets.strip
       index = input_to_index(input)
