@@ -93,30 +93,30 @@ class TicTacToe
   end
   
   def draw?
-    !won?(@board) && full?(@board)
+    !won? && full?
   end
   
   def over?
-    won?(@board) || draw?(@board) || full?(@board)
+    won? || draw? || full?
   end
   
   def winner
-    combination = won?(@board)
+    combination = won?
     
     if combination == false
       return nil
     end
     
     index = combination[0]
-    if board[index] == "X"
+    if @board[index] == "X"
       return "X"
-    elsif board[index] == "O"
+    elsif @board[index] == "O"
       return "O"
     end
   end
   
-  def  play(board)
-    until over?(board)
+  def  play
+    until over?
       index = 20
       until valid_move?(board, index)
         puts "Please enter position(1-9):"
