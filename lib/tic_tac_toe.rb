@@ -124,7 +124,7 @@ class TicTacToe
         index = input_to_index(input)
   
       end
-      move(board, index, current_player(board))
+      move(board, index, current_player)
       display_board(board)
     end
     
